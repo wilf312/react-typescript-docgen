@@ -7,6 +7,6 @@ const stories = storiesOf('Button', module);
 
 stories.add(
   'default',
-  () => <Button text={'text'} onClick={action('onclick')} type={'type'} />,
+  () => <Button text={'text'} onClick={action('onclick')} type={'type'} color={'red'} />,
   { info: { inline: true } }
 );

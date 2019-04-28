@@ -33,7 +33,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: echo $GITHUB_TOKEN
       - run: yarn build-storybook
 
       - run: yarn storybook-to-ghpages -- --ci
